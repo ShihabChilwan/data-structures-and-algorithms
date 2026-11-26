@@ -8,7 +8,7 @@ class LC0001TwoSum {
             int need = target - nums[i];
             if (seen.containsKey(need)) {
                 return new int[]{seen.get(need), i};
-            }
+        
             seen.put(nums[i], i);
         }
         return new int[0];
